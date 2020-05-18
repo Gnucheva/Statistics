@@ -35,5 +35,36 @@ class StatsServiceTest {
 
     }
 
+    @Test
+    void MinMonthSales() {
+        StatsService service = new StatsService();
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int expected = 8;
+        int actual = service.MinMonthSales(monthlySales);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void MinMonthsAverage() {
+        StatsService service = new StatsService();
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int expected = 5;
+        int actual = service.MinMonthsAverage(monthlySales);
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    void MaxMonthsAverage() {
+        StatsService service = new StatsService();
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int expected = 5;
+        int actual = service.MaxMonthsAverage(monthlySales);
+        assertEquals(expected, actual);
+
+
+    }
+
 
 }
