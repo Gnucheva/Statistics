@@ -26,37 +26,37 @@ class StatsServiceTest {
     }
 
     @Test
-    void MaxMonthSales() {
+    void maxMonthSales() {
         StatsService service = new StatsService();
         int expected = 7;
-        int actual = service.MaxMonthSales(monthlySales);
+        int actual = service.maxMonthSales(monthlySales);
         assertEquals(expected, actual);
 
     }
 
     @Test
-    void MinMonthSales() {
+    void minMonthSales() {
         StatsService service = new StatsService();
         int expected = 8;
-        int actual = service.MinMonthSales(monthlySales);
+        int actual = service.minMonthSales(monthlySales);
         assertEquals(expected, actual);
     }
 
     @Test
-    void MinMonthsAverage() {
+    void minMonthsAverage() {
         StatsService service = new StatsService();
         int expected = 5;
-        int actual = service.MinMonthsAverage(monthlySales);
+        int actual = service.minMonthsAverage(monthlySales);
         assertEquals(expected, actual);
 
 
     }
 
     @Test
-    void MaxMonthsAverage() {
+    void maxMonthsAverage() {
         StatsService service = new StatsService();
         int expected = 5;
-        int actual = service.MaxMonthsAverage(monthlySales);
+        int actual = service.maxMonthsAverage(monthlySales);
         assertEquals(expected, actual);
 
 
